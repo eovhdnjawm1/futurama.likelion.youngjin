@@ -11,33 +11,33 @@ export const Navigation = () => {
         <nav>
           <ul>
             <li>
-              <Link href="info">
+              <Link href="/info">
                 <a>Info</a>
               </Link>
             </li>
             <li>
-              <Link href="characters">
+              <Link href="/characters">
                 <a>Characters</a>
               </Link>
             </li>
             <li>
-              <Link href="cast">
+              <Link href="/cast">
                 <a>Cast</a>
               </Link>
             </li>
 
             <li>
-              <Link href="episodes">
+              <Link href="/episodes">
                 <a>Episodes</a>
               </Link>
             </li>
             <li>
-              <Link href="questions">
+              <Link href="/questions">
                 <a>Questions</a>
               </Link>
             </li>
             <li>
-              <Link href="inventory">
+              <Link href="/inventory">
                 <a>Inventory</a>
               </Link>
             </li>
