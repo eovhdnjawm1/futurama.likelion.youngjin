@@ -15,5 +15,5 @@ export const Layout: React.FC = ({ children }) => {
 
 const Container = styled.main`
 max-width: 1280px;
-margin: auto
+margin: auto;
 `

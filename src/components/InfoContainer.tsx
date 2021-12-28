@@ -15,6 +15,7 @@ export const InfoContainer = () => {
   return (
     <main>
       <h2>{name}</h2>
+      <Ul>
         {data.map((infoData: Info) => {
           const { synopsis, yearsAired, creators, id } = infoData;
           return (
@@ -45,6 +46,23 @@ export const InfoContainer = () => {
             </li>
           )
         })}
+        </Ul>
     </main>
   )
 }
+const Ul = styled.ul`
+  max-width:1000px; margin:0 auto;
+  display:grid;
+  gap :2rem;
+  li{}
+  dl{
+    display:flex;
+    justify-content:center;
+    margin-bottom:1rem;
+    gap:2rem;
+    flex-wrap:wrap;
+  }
+  dl + p{text-align:center; max-width:800px; margin:0 auto;}
+
+
+`

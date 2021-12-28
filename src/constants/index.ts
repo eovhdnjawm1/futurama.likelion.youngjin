@@ -3,29 +3,29 @@ export const API_ENDPOINT = 'https://api.sampleapis.com/futurama/';
 export const ROUTES = [
     {
       ID: 0,
-      PATH: "/info",
+      PATH: "/Info",
       LABEL: "INFO",
     },
-    { ID: 1, PATH: "/characters", LABEL: "CHARACTERS" },
+    { ID: 1, PATH: "/Characters", LABEL: "CHARACTERS" },
     {
       ID: 2,
-      PATH: "/episodes",
+      PATH: "/Episodes",
       LABEL: "EPISODES",
     },
   
     {
       ID: 3,
-      PATH: "/inventory",
+      PATH: "/Inventory",
       LABEL: "INVENTORY",
     },
     {
       ID: 4,
-      PATH: "/questions",
+      PATH: "/Questions",
       LABEL: "QUESTIONS",
     },
     {
       ID: 5,
-      PATH: "/cast",
+      PATH: "/Cast",
       LABEL: "CAST",
     },
   ]

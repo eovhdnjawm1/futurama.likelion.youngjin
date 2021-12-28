@@ -14,7 +14,9 @@ export const CastContainer = () => {
 
   return (
     <main>
+      <Ul>
       <h2>{name}</h2>
+      <p></p>
         {data.map((castData: Cast) => {
           const { name, born, bio, id } = castData;
           return (
@@ -25,36 +27,17 @@ export const CastContainer = () => {
             </li>
           )
         })}
+        </Ul>
     </main>
   )
 }
 
-// const Ul = styled.ul`
-//   width:100%;
-//   max-width:1000px; margin:0 auto;
-//   margin:0 auto;
-//   display: grid;
-//   gap :2rem;
-//   grid-template-columns: repeat(2, calc((100% - 2rem) / 2));
-//   @media (min-width: ${MEDIA_QUERY_END_POINT.TABLET}) {
-//     grid-template-columns: repeat(3, calc((100% - 2rem * 2) / 3));
-//   }
-
-//   li{text-align:center;}
-//   p {
-//     display:flex;
-//     justify-content:center;
-//     align-items:center;
-    
-//     span{
-//       font-size: 0.7em;
-//       text-transform: uppercase;
-//       background: #eee;
-//       border-radius: 2rem;
-//       padding: 0.05em 0.8em 0.02em;
-//       margin-right:1rem;
-//       line-height:1.8;
-//     }
-//   }
-
-// `
+const Ul = styled.ul`
+  width:100%;
+  max-width:1000px; margin:0 auto;
+  margin:0 auto;
+  display: grid;
+  gap :2rem;
+  grid-template-columns: repeat(2, calc((100% - 2rem) / 2));
+  
+`

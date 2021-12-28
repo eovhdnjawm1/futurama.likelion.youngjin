@@ -15,6 +15,7 @@ export const InventoryContainer = () => {
   return (
     <main>
       <h2>{name}</h2>
+      <Ul>
         {data.map((inventoryData: Inventory) => {
           const { title, category, description, slogan, price, stock, id } = inventoryData;
           return (
@@ -36,6 +37,19 @@ export const InventoryContainer = () => {
             </li>
           )
         })}
+        </Ul>
     </main >
   )
 }
+
+const Ul = styled.ul`
+  max-width:1000px; margin:0 auto;
+  display:grid;
+  gap :2rem;
+
+  h3{margin-bottom:0.8rem;}
+  li{text-align:center;}
+  dl{display:flex; flex-wrap:wrap; justify-content:center; gap:0 1em;
+    div{ }
+  }
+`

@@ -9,13 +9,14 @@ export const CharactersContainer = () => {
     const name = 'characters'
     const { data, error } = useData(name);
   
+    console.log(error);
     if (error) return <Error />
     if (!data) return <Loading />
   
     return (
       <main>
         <h2>{name}</h2>
-        
+        <Ul>
           {data.map((charData: Characters) => {
             const { images, name, sayings, gender, species, age, id } = charData;
             return (
@@ -50,7 +51,26 @@ export const CharactersContainer = () => {
               </li>
             )
           })}
+          </Ul>
         
       </main>
     )
   }
+  const Ul = styled.ul`
+  width:100%;
+  margin:0 auto;
+  display: grid;
+  gap :2rem;
+  grid-template-columns: repeat(2, calc((100% - 2rem) / 2));
+
+  li{
+
+
+    &:hover > div > p{opacity:1; }
+
+    dl{
+      div{ align-items: center; justify-content: center;}
+    }
+  }
+
+`

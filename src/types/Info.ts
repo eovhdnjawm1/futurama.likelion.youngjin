@@ -1,5 +1,4 @@
 export interface Info{
-
     synopsis: string,
     yearsAired: string,
     creators: 

@@ -15,6 +15,7 @@ export const EpisodesContainer = () => {
   return (
     <main>
       <h2>{name}</h2>
+      <Ul>
         {data.map((EpisodesData: Episodes) => {
           const { number, title, writers, originalAirDate, desc, id } = EpisodesData;
           return (
@@ -35,6 +36,29 @@ export const EpisodesContainer = () => {
             </li>
           )
         })}
+        </Ul>
     </main>
   )
 }
+
+
+const Ul = styled.ul`
+  max-width:1000px; 
+  margin:0 auto;
+  display:grid;
+  gap :20px;
+  li{}
+  dl{
+    display:flex;
+    justify-content:center;
+    margin-bottom:10px;
+    gap:2rem;
+    flex-wrap:wrap;
+  }
+  dl + p{
+    text-align:center; 
+    max-width:800px; 
+    margin:0 auto;}
+
+
+`

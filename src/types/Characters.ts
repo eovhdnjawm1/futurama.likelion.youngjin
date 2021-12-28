@@ -13,7 +13,7 @@ export interface Characters{
       species: string,
       homePlanet: string,
       occupation: string,
-      sayings: string,
+      sayings: [string],
       
       id: number,
       age: string

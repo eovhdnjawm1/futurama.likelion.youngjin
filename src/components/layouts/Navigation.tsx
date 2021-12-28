@@ -1,9 +1,10 @@
-import Link from "next/link";
+import Link from "next/Link";
 import styled from "@emotion/styled";
 // import { MEDIA_QUERY_END_POINT } from "../../constants";
 
 export const Navigation = () => {
   return (
+    <Header>
       <div>
         <h1><Link href="/">
           <a>Futurama</a>
@@ -11,46 +12,48 @@ export const Navigation = () => {
         <nav>
           <ul>
             <li>
-              <Link href="/info">
+              <Link href="/Info">
                 <a>Info</a>
               </Link>
             </li>
             <li>
-              <Link href="/characters">
+              <Link href="/Characters">
                 <a>Characters</a>
               </Link>
             </li>
             <li>
-              <Link href="/cast">
+              <Link href="/Cast">
                 <a>Cast</a>
               </Link>
             </li>
 
             <li>
-              <Link href="/episodes">
+              <Link href="/Episodes">
                 <a>Episodes</a>
               </Link>
             </li>
             <li>
-              <Link href="/questions">
+              <Link href="/Questions">
                 <a>Questions</a>
               </Link>
             </li>
             <li>
-              <Link href="/inventory">
+              <Link href="/Inventory">
                 <a>Inventory</a>
               </Link>
             </li>
           </ul>
         </nav>
       </div>
+      </Header>
   )
 }
 
 const Header = styled.header`
-  background:#111;
+  background:#fff;
   color:#fff;
   box-shadow:0 2px 20px rgba(0,0,0,0.2);
+  margin-bottom:50px;
 
   div{
     max-width:1280px; margin:0 auto;
@@ -64,8 +67,9 @@ const Header = styled.header`
     text-transform: uppercase;
     a{ 
       font-size:2.4rem; color:#E44047;
-      text-shadow:2px 2px 0 #FFE591, -2px -2px 0 #FFE591, -2px 2px 0 #FFE591, 2px -2px 0 #FFE591,
-      2px 0 0 #FFE591, -2px 0 0 #FFE591, 0 -2px 0 #FFE591, 0 2px 0 #FFE591, 2px 4px 0 rgba(0,0,0,0.5);
+      /* text-shadow:2px 2px 0 #FFE591, -2px -2px 0 #FFE591, -2px 2px 0 #FFE591, 2px -2px 0 #FFE591,
+      2px 0 0 #FFE591, -2px 0 0 #FFE591, 0 -2px 0 #FFE591, 0 2px 0 #FFE591, 2px 4px 0 rgba(0,0,0,0.5); */
+      color: black;
     }
   }
   a{
@@ -73,6 +77,7 @@ const Header = styled.header`
     padding:0.5rem 2rem;
     font-weight:bold;
     font-size:1.6rem;
+    color: black;
   }
   ul{
     display:grid;
