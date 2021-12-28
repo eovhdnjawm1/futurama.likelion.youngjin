@@ -2,7 +2,6 @@ import { Error, Loading } from '.';
 import { useData } from '../hooks/useData';
 import styled from '@emotion/styled';
 // import { MEDIA_QUERY_END_POINT } from "../constants";
-import { useState } from 'react';
 import { Questions } from '../types/Questions';
 
 export const QuestionsContainer = () => {
@@ -68,10 +67,10 @@ const Ul = styled.ul`
     font-size:inherit;
     text-align:left;
     display:flex; justify-content:center; align-items:center;
-    span:first-child{ 
+    /* span:first-child{ 
       display:flex; justify-content:center; align-items:center; width:2em; height:2em; 
       background:#eee;  border-radius:50%; margin-right:1rem; 
-    }
+    } */
   }
 
   }
