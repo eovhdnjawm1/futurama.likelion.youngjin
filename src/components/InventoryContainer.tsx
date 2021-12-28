@@ -1,8 +1,6 @@
 import { Error, Loading } from '.';
 import { useData } from '../hooks/useData';
 import styled from '@emotion/styled';
-// import { MEDIA_QUERY_END_POINT } from "../constants";
-
 import { Inventory } from '../types/Inventory';
 
 export const InventoryContainer = () => {
